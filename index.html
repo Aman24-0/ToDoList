@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="/output.css" />
+    <link rel="shortcut icon" href="/fevicon.png" type="image/x-icon">
+  </head>
+  <body
+    class="bg-gradient-to-b from-[#FFDEE9] to-[#B5FFFC] text-[#333333] font-poppins flex flex-col mt-24 items-center gap-11"
+  >
+    <h1 class="text-3xl">To Do List</h1>
+    <div class="flex flex-col gap-4 w-72 items-center">
+      <input
+        id="taskBox"
+        type="text"
+        placeholder="Enter your task"
+        class="border-2 border-solid rounded-lg border-[#BDBDBD] border-transparent bg-white focus:outline-none focus:ring-0 focus:border-[length:4px] focus:border-gradient-to-r focus:from-[#6A11CB] focus:to-[#2575FC] placeholder:text-center placeholder:text-[#AAAAAA] w-full"
+      />
+      <button id="addBut" class="addbutton">Add</button>
+    </div>
+    <div
+      class="w-80 rounded-xl bg-gradient-to-b from-[#F4EBFF] to-[#DFFAFF] border-1 border-solid border-[#D1D5DB] px-3"
+      id="listBox"
+    >
+      <ol id="list" class="flex flex-col gap-2">
+      </ol>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
